@@ -42,6 +42,6 @@ app.post('/pdf', (req, res) => {
     res.send(tempValue)
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Example app listening on port ${port}`)
 })
